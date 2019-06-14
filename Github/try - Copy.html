@@ -1,0 +1,299 @@
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<body bgcolor="white">
+  
+  <header>
+       
+          <span class="heading">Logo</span><span class="heading1">Website Name</span>
+
+      </header>
+<div id="particles-js">
+    <div class="panel">
+
+        
+          
+          <span class=" signup ">Signup</span>
+        
+        
+        
+
+          
+          <div class="box1">
+            <form method="POST" onsubmit="return validation()" name="RegForm" action="signupdb.php">
+            
+            
+                  <label>Name:</label><br>
+                  <input type="text" name="username" class="input-box1"><br>
+                  
+                  <br>
+                  <label>Reg. No:</label><br>
+                  <input type="number" name="rollno" class="input-box1"><br><br>
+                  <label>Date Of Birth:</label><br>
+                  <input type="date" name="age" class="input-box1"><br><br>
+                  <label>Gender:</label><br>
+                      <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other <br><br>
+                  <label>Email:</label><br>
+                  <input type="text" name="email" class="input-box1"><br><br>
+                  <label>Password:</label><br>
+                  <input type="Password" name="pwd" class="input-box1"><br><br>
+                  <button class="register-button">Submit</button>
+                  <br>
+                  If already Registered?<a href="login.php">Login</a>
+
+
+
+            </form>
+
+          </div>
+          
+
+
+    </div>
+  </div>
+    <br>
+
+    
+    
+<div class="intro row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+  Welcome To the World of Templates!!
+  </div>
+  <div class="col-md-2"></div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4" style="color: #323232; font-size: 30px">Hi! I am Shubham Jain (Jainy)</div>
+  <div class="col-md-4"></div>
+</div>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4 img-responsive"><img class="my-image" src="1.jpeg"></div>
+  <div class="col-md-4"></div>
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 text-des">
+    <p>
+      I am Shubham Jain, a 19 year old third year engineering student dwelling from the national capital of India. I am basically a family guy, one who has accredited a lot to destiny, and has always believed in the ideology of “Whatever happens, happens for a reason”.
+    </p>
+
+ 
+
+    <p>
+      Unfortunately, I have spent the last 2 years of my existence slogging it out in the not so metropolitan town of Chennai (So much for a degree, AAAAAAAARGH!)
+    </p>
+
+ 
+
+    <p>
+      To be blatantly honest, I suck at writing or even poetry, but a back up plan is something every Engineer in India is looking for in today’s date. After all, even Chetan Bhagat couldn’t with stand the burden.
+    </p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+
+
+
+
+
+
+
+  
+
+	
+
+</body>
+
+ 
+<!-- stats - count particles --> 
+
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+ <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+ <!-- stats.js lib -->
+ <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+ <script>
+ 	particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 380,
+      "density": {
+        "enable": true,
+        "value_area": 4000
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+ </script>
+
+ <style>
+ 	body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ----    */  #particles-js{ position:absolute; width: 100%; height: 100%; background-color: black; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 100% 100%; }
+ 	.panel {
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    /*left: 5%;*/
+    text-align: justify;
+    margin-left: 40%;
+    margin-right: 40%;
+	}
+	.down{
+		background: balck;
+	}
+  .signup
+  {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  .input-box1
+  {
+    width: 250px;
+  }
+  header
+  {
+    z-index: 5; 
+    position: absolute;
+    font-size: 50px;
+    float: left;
+    color: white;
+    background-color: #442913;
+    width: 100%;
+  }
+  .heading1
+  {
+    margin-left: 60%;
+  }
+  footer{
+    color: white;
+    font-size: 40px;
+  }
+  .intro
+  {
+    z-index: 2;
+    font-size: 50;
+    color: black;
+    margin-top: 46%;
+
+  }
+  .text-des
+  {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .my-image
+  {
+    border-radius: 200px;
+    width: 400px; 
+    padding: 20px;
+    margin: 10px;
+  }
+ </style>

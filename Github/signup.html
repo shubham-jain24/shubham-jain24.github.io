@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" type="text/css" href="web.css">
+  <style type="text/css">
+      .input-box1{
+        width: 270px;
+    border-radius: 0px;
+    height: 20px;
+
+      }
+  </style>
+
+
+ <script>
+
+function validation()                                    
+{ 
+    var name = document.forms["RegForm"]["username"];
+    var rollno = document.forms["RegForm"]["rollno"];
+    var age = document.forms["RegForm"]["age"];               
+    var email = document.forms["RegForm"]["email"];    
+    var gender = document.forms["RegForm"]["gender"]; 
+    var pwd = document.forms["RegForm"]["pwd"];  
+    var regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+    if (name.value == "")                                  
+    { 
+       document.getElementById("name_error").style.visibility = "visible";
+        return false;
+    }
+
+    if (rollno.value == "")                                  
+    { 
+        window.alert("Please enter your Registration no."); 
+        rollno.focus(); 
+        return false; 
+    } 
+       
+    if (gender.value == "")                           
+    { 
+        window.alert("Please select some field in Gender."); 
+        gender.focus(); 
+        return false; 
+    } 
+   
+
+     if (age.value == "")                                  
+    { 
+        window.alert("Please input valid date of birth."); 
+        age.focus(); 
+        return false; 
+    }  
+
+    if (!regex.test(RegForm.email.value))                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    }
+   
+   
+   
+    
+    if (pwd.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        pwd.focus(); 
+        return false; 
+    } 
+   
+    return true; 
+}
+</script>
+</head>
+<body background="background.jpg" style="background-attachment: fixed;">
+    <header class="logo">
+        <img src="Logo.png" width="15%" style="padding: 10px;">
+        <span class="heading">Wholesale Bazaar</span>
+    </header>
+    <div class="box1" style="border-radius: 0px;">
+      <form method="POST" onsubmit="return validation()" name="RegForm" action="signupdb.php">
+    	<div class="register">REGISTER </div>
+        <label>Name:</label><br>
+        <input type="text" name="username" class="input-box1"><br>
+        <span class="name_error" style="visibility: hidden; color: white; font-size: 10px; padding: 2px;">*User Name Missing</span>
+        <br>
+        <label>Reg. No:</label><br>
+        <input type="number" name="rollno" class="input-box1"><br><br>
+        <label>Date Of Birth:</label><br>
+        <input type="date" name="age" class="input-box1"><br><br>
+        <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+        	<input type="radio" name="gender" value="female"> Female
+        	<input type="radio" name="gender" value="other"> Other <br><br>
+        <label>Email:</label><br>
+        <input type="text" name="email" class="input-box1"><br><br>
+        <label>Password:</label><br>
+        <input type="Password" name="pwd" class="input-box1"><br><br>
+        <button class="register-button">Submit</button>
+        <br>
+        If already Registered?<a href="login.php">Login</a>
+
+    </form>
+    </div>
+    <footer class="foot-style" style="background-color: red;">
+        Contact us<br>
+        <div class="info">info@wolesalerbazaar.com</div><br>
+        <input type="email" name="subscribe" placeholder="Enter Your Email-Id" style="width: 500px; height: 30px; padding: 5px;">
+        <button type="submit" class="subscribe" name="submit">Subscribe</button>
+    </footer>
+</body>
+</html>
