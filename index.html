@@ -1,0 +1,127 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="myfile.css">
+<body bgcolor="red">
+	
+		<header>
+			<div class="row">
+
+				<div class="col-md-2 heade">Jainy</div>
+				<div class="col-md-6 heade"></div>
+				<div class="col-md-2 bg2 intern-data">Internship</div>
+				<div class="col-md-2 bg3 skills-data">Skills</div>
+
+				
+			</div>
+		</header>
+
+		<div class="row intro">
+		  		<div class="col-md-8">
+		  			<img src="1.jpeg" class="profile img-responsive"><br>
+		      		Shubham Jain
+		  		</div>
+		  		<div class="col-md-2 bg2 intern-cont">
+		  			<img class="img-responsive myskills" src="lr.png" alt="HTML">
+		  			Limeroad.com<br>
+		  			(Intern-Technology)<br>
+		  			<img class="img-responsive myskills" src="wingify.png" alt="HTML">
+		  			Wingify Pvt. Ltd.<br>
+		  			(Webdev - Intern)<br>
+		  		</div>
+		  		<div class="col-md-2 bg3">
+		  			<img class="img-responsive myskills" src="html.png" title="HTML">
+		  			<img class="img-responsive myskills" src="bootstrap.png" title="Bootstrap">
+		  			<img class="img-responsive myskills" src="angular.svg" title="AngularJS">
+		  		</div>
+		</div>
+
+		<div class="row bg2 ">
+				<div class="col-md-10 aboutme">About</div>
+		  		<div class="col-md-2 bg3">
+		  			<img class="img-responsive myskills" src="js.png" title="Javascript">
+		  		</div>
+		</div>
+
+		<div class="row bg2">
+				<div class="col-md-5 logo2 skill data"><img class="sub-image img-responsive" src="student.png"><br>
+					4th Year Undergraduate<br>
+	            B.Tech ( Information Technology )<br>
+	            SRM Institute Of Science And Technology(Chennai)<br>
+	            CGPA - 9.28
+				</div>
+				<div class="col-md-5 skill  data">
+					<img src="like.png" class="sub-image img-responsive" ><br>
+					<p>I'm a data science enthusiast, who<br> 
+	                love to work with data and <br>
+	                a web developer. A poetry blogger<br>
+	                who is always ready to experience<br>
+	                new things.</p> </div>
+				
+		  		<div class="col-md-2 bg3">
+		  			<img class="img-responsive myskills" src="rails.png" title="Ruby on Rails">
+		  			<img class="img-responsive myskills" src="data.png" title="Datascience">
+
+		  		</div>
+		</div>
+
+		<div ng-app = "myapp" ng-controller="jsonoutput">
+			<div class="row bg3 proj" >
+				<div class="col-md-6 sub-head">Projects<br>
+
+					
+						<p ng-repeat = "x in details" class="para">
+							<span class="name">{{x.name}}</span><br>
+							<span class="disc">{{x.desc}}</span><br>
+							<span class="link">{{x.link}}</span>
+							
+						</p>
+
+
+				</div>
+				<div class="col-md-6 sub-head" >Online - Courses<br>
+					<p ng-repeat = "x in details" class="para" >
+							<span class="name">{{x.course}}</span><br>
+							<span class="disc">{{x.Organ}}</span><br>
+							<span class="link">{{x.month}}</span>
+							
+							
+						</p>
+				</div>
+			</div>
+		</div>
+
+	<footer>
+		<div class="col-md-4 foot-data">Reach to me-<br>
+			<a href="https://github.com/shubham-jain24" class="link-data"><img src="git.png" class="site-image">shubham-jain24</a><br>
+
+			<a href="https://www.linkedin.com/in/shubham-jain-948240164/" class="link-data"><img src="linkedin.png" class="site-image">Shubham Jain</a><br>
+
+			<a href="#" class="link-data"><img src="phone.png" class="site-image">8428275408</a><br>
+			<a href="#" class="link-data"><img src="email.png" class="site-image">shubhjain24999@gmail.com</a>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+		<script src="my-app.js"></script>
+		<script src="my-ctrl.js"></script>
+
+
+
+</body>
+
+
+
+

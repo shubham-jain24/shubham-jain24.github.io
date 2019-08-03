@@ -1,0 +1,203 @@
+<style>
+.signup
+{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 20%;
+    z-index: 2;
+}
+.input-box1
+{
+    width: 250px;
+}
+
+.heading
+{
+    margin-left: 15px;
+}
+
+footer{
+    color: white;
+    font-size: 40px;
+}
+.text-des
+{
+    font-size: 20px;
+    margin: 10px;
+}
+.my-image
+{
+    border-radius: 200px;
+    width: 400px; 
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 10%;
+}
+.profession
+{
+    padding: 10px;
+}
+.block1
+{
+    
+    text-align: center;
+    padding: 15px;
+}
+.sub-heading
+{
+    font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+}
+.sub-image
+{
+    width: 150px;
+}
+.sub-sub-heading{
+    font-size: 20px;
+    background-color: #798BB5;
+    padding: 20px;
+    padding: 10px;
+}
+.hometown
+{
+    background-color: white;
+}
+.heade
+{
+	background-color: #0A2541;
+	padding: 20px;
+	font-size: 50px;
+	color : #CADBED;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.intro
+{
+	background-color: #0A2541;
+	text-align: center;
+	font-size: 40px;
+	color: #CADBED;
+
+}
+
+.profile
+{
+	width: 40%;
+	padding: 20px;
+	padding-top: 40px;
+	 border-radius: 50%; 
+}
+.bg2
+{
+	background-color: #174276;
+}
+.bg3
+{
+	background-color: #ADD8FF;
+	text-align: center;
+}
+.aboutme
+{
+	font-size: 50px;
+	text-align: center;
+	color: #7AB6F5;
+	padding-top: 15px;
+}
+.logo2
+{
+	text-align: right;
+}
+.data
+{
+	color: #ADD8FF;
+	text-align: center;
+}
+.skill
+{
+	padding-top: 0px;
+}
+.likes
+{
+	text-align: left;
+}
+.likes-data
+{
+	text-align: right; 
+}
+.myskills
+{
+	width: 150px;
+	padding: 20px;
+	text-align: center;
+}
+.skills-data
+{
+	font-size: 40px;
+	text-align: center;
+	color: #0A2541;
+}
+.intern-data
+{
+	font-size: 40px;
+	text-align: center;
+	color: #ADD8FF;
+}
+.intern-cont
+{
+	font-size: 15px;
+}
+.sub-head
+{
+	font-size: 40px;
+	color: #0A2541;
+	padding: 20px;
+}
+.name
+{
+	font-size: 20px;
+}
+.link
+{
+	font-size: 10px;
+}
+.disc
+{
+	font-size: 15px;
+	color: #656E78;
+}
+.proj
+{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.para
+{
+	padding: 10px;
+}
+footer
+{
+	background-color: #0A2541;
+}
+.site-image
+{
+	width: 35px;
+	padding-right: 10px;
+}
+.link-data
+{
+	font-size: 15px;
+	padding: 10px;
+}
+.foot-data
+{
+	font-size: 20px;
+	padding: 10px;
+	padding-left: 20px;
+}
+body
+{
+	font-family: 'Blinker', sans-serif;
+}
+</style>
